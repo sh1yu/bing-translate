@@ -3,7 +3,7 @@ language: go
 go:
     - "1.10"
 
-go_import_path: github.com/psy-core
+go_import_path: github.com/psy-core/bing-translate
 
 # install:
 #     - 
