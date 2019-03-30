@@ -17,7 +17,11 @@ func init() {
 		"ar":     "كيف حالك",
 		"ko":     "어떻게 지내니",
 	}
-	b, _ = NewBingTransator(5000)
+	var err error
+	b, err = NewBingTransator(5000)
+	if err != nil {
+		panic(err)
+	}
 }
 
 func TestBingTranslator_TDetect(t *testing.T) {
