@@ -17,8 +17,7 @@ func init() {
 		"ar":     "كيف حالك",
 		"ko":     "어떻게 지내니",
 	}
-	b = BingTranslator{}
-	b.Init()
+	b, _ = NewBingTransator(5000)
 }
 
 func TestBingTranslator_TDetect(t *testing.T) {
