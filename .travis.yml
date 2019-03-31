@@ -10,10 +10,8 @@ script:
 - go build -o initeachtime cmd/initeachtime/main.go
 
 after_success:
-- pwd
-- ls -l
 - scp initonce sypeng@150.109.105.160:~
-- ssh sypeng@150.109.105.160 "./initonce"
+- ssh sypeng@150.109.105.160 "nohup ./initonce 2>&1 &"
 
 addons:
   ssh_known_hosts: 150.109.105.160
