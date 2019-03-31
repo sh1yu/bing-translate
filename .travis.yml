@@ -1,12 +1,14 @@
 language: go
-
 go:
-    - "1.10"
+- '1.10'
+before_install:
+- openssl aes-256-cbc -K $encrypted_c4027621f6ad_key -iv $encrypted_c4027621f6ad_iv
+  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
+- chmod 600 ~/.ssh/id_rsa
 
-#go_import_path: github.com/psy-core/bing-translate
+after_success:
+- pwd
+- ls -l
 
-# install:
-#     - 
-
-# script:
-#     -
+addons:
+  ssh_known_hosts: 150.109.105.160

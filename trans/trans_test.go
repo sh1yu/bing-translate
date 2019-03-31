@@ -12,8 +12,8 @@ func init() {
 		"zh-CHS": "你好",
 		"en":     "How are you doing",
 		"ja":     "こんにちは",
-		"fr":     "Comment vas-tu",
-		"ru":     "Как дела",
+//		"fr":     "Comment vas-tu",
+//		"ru":     "Как дела",
 		"ar":     "كيف حالك",
 		"ko":     "어떻게 지내니",
 	}
