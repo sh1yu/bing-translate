@@ -11,11 +11,11 @@ func init() {
 	langMap = map[string]string{
 //		"zh-CHS": "你好",
 		"en":     "How are you doing",
-		"ja":     "こんにちは",
+//		"ja":     "こんにちは",
 //		"fr":     "Comment vas-tu",
 //		"ru":     "Как дела",
 //		"ar":     "كيف حالك",
-		"ko":     "어떻게 지내니",
+//		"ko":     "어떻게 지내니",
 	}
 	var err error
 	b, err = NewBingTransator(5000)
