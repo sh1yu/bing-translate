@@ -18,7 +18,7 @@ func main() {
 	timeout := flag.Int("timeout", 5000, "http请求超时毫秒数")
 	flag.Parse()
 
-	t, err := trans.NewBingTransator(*timeout)
+	t, err := trans.NewBingTranslator(*timeout)
 	if err != nil {
 		fmt.Println("trans init error:", err)
 		return

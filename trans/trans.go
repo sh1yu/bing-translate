@@ -27,7 +27,7 @@ type BingTranslator struct {
 //	return strconv.Itoa(b.index)
 //}
 
-func NewBingTransator(timeout int) (BingTranslator, error) {
+func NewBingTranslator(timeout int) (BingTranslator, error) {
 
 	t := 5
 	if timeout > 0 {

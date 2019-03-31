@@ -18,7 +18,7 @@ func init() {
 //		"ko":     "어떻게 지내니",
 	}
 	var err error
-	b, err = NewBingTransator(5000)
+	b, err = NewBingTranslator(5000)
 	if err != nil {
 		panic(err)
 	}
