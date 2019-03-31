@@ -9,12 +9,12 @@ var langMap map[string]string
 
 func init() {
 	langMap = map[string]string{
-		"zh-CHS": "你好",
+//		"zh-CHS": "你好",
 		"en":     "How are you doing",
 		"ja":     "こんにちは",
 //		"fr":     "Comment vas-tu",
 //		"ru":     "Как дела",
-		"ar":     "كيف حالك",
+//		"ar":     "كيف حالك",
 		"ko":     "어떻게 지내니",
 	}
 	var err error
