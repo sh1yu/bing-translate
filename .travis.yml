@@ -4,8 +4,16 @@ go:
 before_install:
 - openssl aes-256-cbc -K $encrypted_c4027621f6ad_key -iv $encrypted_c4027621f6ad_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
+
+script:
+- go build -o initonce cmd/initonce/main.go
+- go build -o initeachtime cmd/initeachtime/main.go
+
 after_success:
 - pwd
 - ls -l
+- scp initonce sypeng@150.109.105.160:~
+- ssh sypeng@150.109.105.160 "./initonce"
+
 addons:
   ssh_known_hosts: 150.109.105.160
